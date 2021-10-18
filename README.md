@@ -7,12 +7,14 @@ In this problem, you will solve a KLOTSKI number puzzle.
 To win, you need to fully arrange the 4 x 4 board in the correct order by sliding the pieces.
 
 The correct order:
-![](src/main/resources/view/assets/source1.png)
 
-<div style="text-align: center;">
+<p style="text-align: center;">
     <img src="src/main/resources/view/assets/source1.png" width="240px" >
-</div>
+</p>
+
+
 # Initialization Input
+
 To input a 2D array `A` there will be 4 lines of input, each line consists of 4 integers.
 
 The `c`th integer in the `r`th line, `A`<sub>r,c</sub>, ranges from 0 to 15. `A` is guaranteed to include all integers from 0 to 15. 
@@ -22,9 +24,15 @@ The `c`th integer in the `r`th line, `A`<sub>r,c</sub>, ranges from 0 to 15. `A`
 There are no inputs for a Game Turn.
 
 In each turn, you must swap the number 0 with any adjacent number (in the up, down, left, right direction of number 0 without exceeding the border) in array `A`, or in other words, slide the block beside the empty spot.
-![](src/main/resources/view/assets/source2.png)
 
-![](src/main/resources/view/assets/example.gif)
+<p style="text-align: center;">
+    <img src="src/main/resources/view/assets/source2.png" width="240px" >
+</p>
+
+<p style="text-align: center;">
+    <img src="src/main/resources/view/assets/example.gif" width="240px" >
+</p>
+
 
 # Output
 
