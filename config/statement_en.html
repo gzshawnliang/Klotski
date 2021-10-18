@@ -1,0 +1,137 @@
+<div class="statement-body">
+<div class="statement-section statement-goal">
+   <h2><span class="icon icon-goal">&nbsp;</span><span>The Game </span></h2>
+   <span class="question-statement">
+      In this problem, you will solve a KLOTSKI number puzzle.
+      </span>
+</div>
+<div class="statement-section statement-rule">
+   <h2><span class="icon icon-rules">&nbsp;</span><span>Rules </span></h2>
+   <span class="question-statement">
+      <p>To win, you need to fully arrange the <code>4</code> x <code>4</code> board in the correct order by sliding the pieces.</p>
+      <p>The correct order:</p>
+      <p style="text-align: center;">
+      <img src="https://cdn-games.codingame.com/community/4085102-1633411383987/6a640cbdfdf2a0339106c213160d5fdb02aea351ba75f6e25b67180a3bc79139.png" width="240">
+      </p>
+
+      <p><strong>Initialization Input</strong></p>
+      <p>To input a 2D array <var>A</var> there will be 4 lines of input, each line consists of 4 integers.</p>
+      <p>The <var>c</var>th integer in the <var>r</var>th line, <var>A<sub>r,c</sub></var>, ranges from 0 to 15.
+<var>A</var> is guaranteed to include all integers from 0 to 15. </p>
+      <p>
+         <p><strong>Game Turn</strong></p>
+         <p>There are no inputs for a Game Turn.</p>
+
+         <p>
+In each turn, you must swap the number <const>0</const> with any adjacent number (in the up, down, left, right direction of number 0 without exceeding the border) in array <var>A</var>, or in other words, slide the block beside the empty spot.</p>
+<p style="text-align: center;">
+      <img src="https://cdn-games.codingame.com/community/4085102-1633411383987/0396ae3e611098244bf4e9ac6cb093026c9a79eea207cfa6dc8b16f5a5a8f637.png" width="240">
+</p>
+
+<p style="text-align: center;">
+      <img src="https://cdn-games.codingame.com/community/4085102-1633411383987/ece0b3b5bcc088c743cd33b2d32f01e6ae91418a7bd28846fac88d434f77d1a6.gif" width="240">
+</p>
+      <p><strong>Output</strong></p>
+         <p>
+Each turn you should output two integers <var>r</var> and <var>c</var>, indicating you are sliding the block in the <var>r</var>th row and the <var>c</var>th column, in short <strong>(r,c)</strong>. </p>
+
+<p>
+While in the correct order, number <const>1</const> is at <strong>(0,0)</strong> and number <const>7</const> is at <strong>(1, 2)</strong>.</p>
+
+<p>
+
+
+      </p>
+      <p><strong>Wrong Output</strong></p>
+      <ul> <var>r</var><0 or <var>r</var>>3 or <var>c</var><0 or <var>c</var>>3 </ul>
+      <ul> Among existing <var>A<sub>r+1,c</sub></var>, <var>A<sub>r-1,c</sub></var>, <var>A<sub>r,c+1</sub></var>, <var>A<sub>r,c-1</sub></var> there is no number <const>0</const>. </ul>
+      </p>
+   </span>
+
+</div>
+
+   <div class="statement-section">
+      <div class="blk">
+            <div class="title"><p><strong>Example</strong></div>
+            <div class="statement-inout">
+               <div class="statement-inout-in">
+                  <div class="title">Input</div>
+                  <code> 
+                     1 2 3 4<br>
+                     5 6 8 11<br>
+                     9 10 7 12<br>
+                     13 14 15 0<br>               
+                  </code>
+               </div>
+               <div class="statement-inout-out">
+                  <div class="title">Output</div>
+                  <code>
+                     2 3<br>
+                     1 3<br>
+                     1 2<br>
+                     2 2<br>
+                     2 3<br>
+                     3 3<br>               
+                  </code>
+               </div>
+         </div>
+      </div>
+   </div>
+
+<div class="statement-section statement-rule">
+   <h2><span class="icon icon-expertrules">&nbsp;</span><span>Expert Rules </span></h2>
+   <span class="question-statement">
+      <p>Small reminder: there will be cases requiring hundreds of turns to solve, and after each turn <var>A</var> will change and your program should keep track of that :D</p>
+      <p>The common strat includes 3 steps:<p>
+         <ul>
+            put number 1 to 4 in their correct locations and never deal with the first line ever again.
+         </ul>
+         <ul>
+            Similarly, put number 5 to 8 in their correct locations and never deal with the second line ever again.
+         </ul>
+         <ul>
+            Arrange the last two lines (which is a bit hard).
+         </ul>
+   </span>
+</div>
+
+<div class="statement-victory-conditions">
+      <div class="icon victory"></div>
+      <div class="blk">
+          <div class="title">Victory Conditions</div>
+          <div class="text">
+              <ul style="padding-bottom:0">
+                 <li>After a game turn, the 2D array A equals to the following:<br>
+                  {<br>{1, 2, 3, 4}, <br>
+                     {5, 6, 7, 8},<br>
+                     {9, 10, 11, 12},<br>
+                     {13, 14, 15, 0}<br>
+                  }
+                 </li>
+                 <li>There is almost no need to minimize the total steps</li>
+                 </ul>
+          </div>
+      </div>
+  </div>
+
+<div class="statement-lose-conditions">
+      <div class="icon lose"></div>
+      <div class="blk">
+          <div class="title">Loss Conditions</div>
+          <div class="text">
+              <ul style="padding-bottom:0">
+                 <li>Exceed the turn limit of 500. </li>
+                 <li>Wrong input</li>
+               </ul>
+          </div>
+      </div>
+  </div>
+
+<div class="statement-section statement-protocol">
+   <div claees="blk">
+      <div class="title">Constraints</div>
+      <div class="question-statement-constraints">
+         <p>0 &le; <var>A<sub>r,c</sub></var> &le; 15 for <var>r</var> ∈ [0, 3] and <var>c</var> ∈ [0, 3]</p>
+   </div>
+</div>
+</div>

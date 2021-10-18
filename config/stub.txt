@@ -1,0 +1,16 @@
+loop 4 loop 4 read tmp:int
+
+gameloop
+read curTurn:int
+write 2 3
+
+OUTPUT
+move <row> <col>
+
+
+STATEMENT
+move the numbers and win
+
+INPUT
+tmp: A[i][j]
+curTurn: turn counter (500 at max)
