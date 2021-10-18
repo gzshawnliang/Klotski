@@ -9,6 +9,9 @@ To win, you need to fully arrange the 4 x 4 board in the correct order by slidin
 The correct order:
 ![](src/main/resources/view/assets/source1.png)
 
+<div style="text-align: center;">
+    <img src="src/main/resources/view/assets/source1.png" width="240px" >
+</div>
 # Initialization Input
 To input a 2D array `A` there will be 4 lines of input, each line consists of 4 integers.
 
@@ -101,3 +104,5 @@ The common strat includes 3 steps:
 # Constraints
 
 $0 \leq $ `A`<sub>r,c</sub> $ \leq 15$ for <sub>r</sub> ∈ [0, 3] and <sub>c</sub> ∈ [0, 3]
+
+
