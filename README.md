@@ -8,7 +8,7 @@ To win, you need to fully arrange the 4 x 4 board in the correct order by slidin
 
 The correct order:
 
-<p style="text-align: center;">
+<p align="center">
     <img src="src/main/resources/view/assets/source1.png" width="240px" >
 </p>
 
@@ -25,11 +25,11 @@ There are no inputs for a Game Turn.
 
 In each turn, you must swap the number 0 with any adjacent number (in the up, down, left, right direction of number 0 without exceeding the border) in array `A`, or in other words, slide the block beside the empty spot.
 
-<p style="text-align: center;">
+<p align="center">
     <img src="src/main/resources/view/assets/source2.png" width="240px" >
 </p>
 
-<p style="text-align: center;">
+<p align="center">
     <img src="src/main/resources/view/assets/example.gif" width="240px" >
 </p>
 
