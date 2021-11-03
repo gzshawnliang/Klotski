@@ -4,6 +4,6 @@
 		"1": "random1"
 	},
 	"testIn": "10 3 11 4\n2 6 8 12\n5 14 13 7\n1 9 15 0\n",
-	"isTest": "false",
-	"isValidator": "true"
+	"isTest": "true",
+	"isValidator": "false"
 }
