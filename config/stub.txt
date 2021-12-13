@@ -1,4 +1,6 @@
-loop 4 loop 4 read tmp:int
+loop 4 read i1:int i2:int i3:int i4:int
+
+
 
 gameloop
 read curTurn:int
@@ -12,5 +14,8 @@ STATEMENT
 move the numbers and win
 
 INPUT
-tmp: A[i][j]
+i1: 1th integer in the currunt line,you should save in 2d-array.
+i2: 2th integer in the currunt line,you should save in 2d-array.
+i3: 3th integer in the currunt line,you should save in 2d-array.
+i4: 4th integer in the currunt line,you should save in 2d-array.
 curTurn: turn counter (500 at max)
