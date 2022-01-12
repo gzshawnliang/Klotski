@@ -3,7 +3,7 @@
 		"2": "random5",
 		"1": "random5"
 	},
-	"testIn": "4 2 14 8\n15 7 5 12\n10 9 6 13\n3 11 1 0\n",
+	"testIn": "7 0 9 6\n8 12 2 11\n3 14 15 10\n1 13 5 4\n",
 	"isTest": "true",
 	"isValidator": "false"
 }

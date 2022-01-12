@@ -14,8 +14,8 @@ STATEMENT
 move the numbers and win
 
 INPUT
-j0: 1th integer in the currunt line,you should save to 2d-array A[i][0].
-j1: 2th integer in the currunt line,you should save to 2d-array A[i][1].
-j2: 3th integer in the currunt line,you should save to 2d-array A[i][2].
-j3: 4th integer in the currunt line,you should save to 2d-array A[i][3].
+j0: 1st integer in the current line,you should save to 2d-array A[i][0].
+j1: 2nd integer in the current line,you should save to 2d-array A[i][1].
+j2: 3rd integer in the current line,you should save to 2d-array A[i][2].
+j3: 4th integer in the current line,you should save to 2d-array A[i][3].
 curTurn: turn counter (500 at max)
