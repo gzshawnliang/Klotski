@@ -3,7 +3,6 @@ loop 4 read j0:int j1:int j2:int j3:int
 
 
 gameloop
-read curTurn:int
 write 2 3
 
 OUTPUT
@@ -18,4 +17,3 @@ j0: 1st integer in the current line,you should save to 2d-array A[i][0].
 j1: 2nd integer in the current line,you should save to 2d-array A[i][1].
 j2: 3rd integer in the current line,you should save to 2d-array A[i][2].
 j3: 4th integer in the current line,you should save to 2d-array A[i][3].
-curTurn: turn counter (500 at max)
